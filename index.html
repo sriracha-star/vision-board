@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vision Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- NAV -->
+  <nav class="tabs">
+    <div class="tabs-track">
+      <div class="tabs-indicator" data-indicator></div>
+      <button class="tab-btn" data-tab="home">Home</button>
+      <button class="tab-btn" data-tab="target">Target</button>
+      <button class="tab-btn" data-tab="rappels">Rappels</button>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section class="view" data-view="home">
+    <div class="masonry">
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-langues"></div>
+        <div class="card-body">
+          <h2 style="color:#2f8f83">Langues</h2>
+          <ul style="--accent:#2f8f83">
+            <li>Coréen</li>
+            <li>Anglais</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-glowup"></div>
+        <div class="card-body">
+          <h2 style="color:#e0447a">Glow up</h2>
+          <ul style="--accent:#e0447a">
+            <li>Sport</li>
+            <li>Alimentation</li>
+            <li>Skincare</li>
+            <li>Haircare</li>
+            <li>Makeup</li>
+            <li>Compléments alimentaires</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-mental"></div>
+        <div class="card-body">
+          <h2 style="color:#7a5cd6">Mental</h2>
+          <ul style="--accent:#7a5cd6">
+            <li>EMDR</li>
+            <li>Journaling</li>
+            <li>Techniques de stabilisation</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-art"></div>
+        <div class="card-body">
+          <h2 style="color:#d98324">Art</h2>
+          <ul style="--accent:#d98324">
+            <li>Dessin &amp; peinture</li>
+            <li>Guitare</li>
+            <li>Photographie</li>
+            <li>Couture &amp; patronage</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-design"></div>
+        <div class="card-body">
+          <h2 style="color:#2f8f83">Design</h2>
+          <ul style="--accent:#2f8f83">
+            <li>Portfolio absolument incroyable</li>
+            <li>Théorie, design thinking &amp; UX</li>
+            <li>UI</li>
+            <li>Bénévolat</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-logiciels"></div>
+        <div class="card-body">
+          <h2 style="color:#e0447a">Logiciels</h2>
+          <ul style="--accent:#e0447a">
+            <li>After Effects</li>
+            <li>Illustrator</li>
+            <li>Photoshop</li>
+            <li>Lightroom</li>
+            <li>Modélisation 2D / 3D</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-jeux"></div>
+        <div class="card-body">
+          <h2 style="color:#7a5cd6">Créer des jeux</h2>
+          <ul style="--accent:#7a5cd6">
+            <li>Un jeu drôle sur Godot</li>
+            <li><em>« Sur la route de l'histoire »</em></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-monde"></div>
+        <div class="card-body">
+          <h2 style="color:#d98324">Comprendre le monde</h2>
+          <ul style="--accent:#d98324">
+            <li>Marketing</li>
+            <li>Tech &amp; API</li>
+            <li>Finance</li>
+            <li>Maths</li>
+            <li>IA &amp; data</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-adulte"></div>
+        <div class="card-body">
+          <h2 style="color:#e0447a">Trucs d'adulte</h2>
+          <ul style="--accent:#e0447a">
+            <li>Passer le permis</li>
+            <li>Économiser <strong>6 000 €</strong> minimum</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="ph-inspirer"></div>
+        <div class="card-body">
+          <h2 style="color:#2f8f83; margin-bottom:16px;">S'inspirer</h2>
+          <a class="constellation-link" href="https://sriracha-star.github.io/laconstellation/" target="_blank" rel="noopener">
+            <span>↗</span><span class="underline">La Constellation</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- TARGET -->
+  <section class="view" data-view="target" hidden>
+    <div class="masonry">
+
+      <article class="card">
+        <div class="photo-slot" data-slot="tg-asie"></div>
+        <div class="card-body card-body--target">
+          <h2 style="color:#2f8f83">Vivre en Asie</h2>
+          <p>Vivre en Corée ou en Chine sur du long terme.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="tg-appart"></div>
+        <div class="card-body card-body--target">
+          <h2 style="color:#d98324">Mon chez-moi</h2>
+          <p>Un bel appartement moderne à Séoul ou en Chine, spacieux, avec une belle vue, décoré à mon goût version 60s / 70s avec des vinyles.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="tg-liberte"></div>
+        <div class="card-body card-body--target">
+          <h2 style="color:#7a5cd6">Libre &amp; indépendante</h2>
+          <p>Financièrement indépendante et totalement libre géographiquement (freelance), avec de la stabilité et un revenu <strong>&gt; 3 000 € / mois</strong>.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="tg-confort"></div>
+        <div class="card-body card-body--target">
+          <h2 style="color:#e0447a">Grand confort</h2>
+          <p>Accès à des soins self-care, skincare et santé ultra pointus, un grand confort de vie sans difficulté.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="tg-poete"></div>
+        <div class="card-body card-body--target">
+          <h2 style="color:#7a5cd6">Âme de poète</h2>
+          <p>Liberté intérieure, créativité, cultiver une âme de poète tout en vivant avec mon temps et en acceptant ma part de vanité et de matérialisme.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="tg-confiance"></div>
+        <div class="card-body card-body--target">
+          <h2 style="color:#2f8f83">Confiance en soi</h2>
+          <p>Clarté mentale, paix intérieure, confiance et humilité, être une personne incarnée, présente, libérée du joug de la peur, du doute et de la honte.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo-slot" data-slot="tg-beaute"></div>
+        <div class="card-body card-body--target">
+          <h2 style="color:#e0447a">Beauté</h2>
+          <p>Être pleinement satisfaite de mon apparence, sans chercher la perfection mais en optimisant mon potentiel.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- RAPPELS -->
+  <section class="view" data-view="rappels" hidden>
+    <div class="quotes">
+
+      <blockquote style="--accent:#e0447a">
+        <span class="quote-mark quote-open">&ldquo;</span>
+        <p>T'as deux choix : rester allongée et continuer de rêver, ou bien te lever, bosser et réaliser tes rêves.</p>
+        <span class="quote-mark quote-close">&rdquo;</span>
+      </blockquote>
+
+      <blockquote style="--accent:#7a5cd6">
+        <span class="quote-mark quote-open">&ldquo;</span>
+        <p>Ton anxiété, c'est ce que t'as commencé et pas terminé. Poursuis ton potentiel.</p>
+        <span class="quote-mark quote-close">&rdquo;</span>
+      </blockquote>
+
+      <blockquote style="--accent:#d98324">
+        <span class="quote-mark quote-open">&ldquo;</span>
+        <p>Ta psy t'a dit que tu dois faire des activités stimulantes pour ton cerveau sinon tu rumines. Bosser, c'est littéralement obligatoire pour ta santé mentale.</p>
+        <span class="quote-mark quote-close">&rdquo;</span>
+      </blockquote>
+
+      <blockquote style="--accent:#2f8f83">
+        <span class="quote-mark quote-open">&ldquo;</span>
+        <p>Pense aux idols coréennes, tu les vois procrastiner ? C'est des bosseurs, sois comme eux. Regarde Yujin.</p>
+        <span class="quote-mark quote-close">&rdquo;</span>
+      </blockquote>
+
+      <blockquote style="--accent:#e0447a">
+        <span class="quote-mark quote-open">&ldquo;</span>
+        <p>T'es pas trop vieille, plein de gens sont plus vieux que toi et commencent tout juste.</p>
+        <span class="quote-mark quote-close">&rdquo;</span>
+      </blockquote>
+
+      <blockquote style="--accent:#7a5cd6">
+        <span class="quote-mark quote-open">&ldquo;</span>
+        <p>T'as vécu des épreuves et fait quelques erreurs mais ça t'a beaucoup appris, et sans ça t'aurais pas évolué.</p>
+        <span class="quote-mark quote-close">&rdquo;</span>
+      </blockquote>
+
+      <blockquote style="--accent:#d98324">
+        <span class="quote-mark quote-open">&ldquo;</span>
+        <p>T'inquiète pas de la concurrence, t'es unique en ton genre, aie confiance.</p>
+        <span class="quote-mark quote-close">&rdquo;</span>
+      </blockquote>
+
+    </div>
+  </section>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
