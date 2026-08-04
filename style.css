@@ -225,6 +225,37 @@ body {
 }
 
 /* RAPPELS */
+.quotes-toolbar {
+  max-width: 760px;
+  margin: 0 auto 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 4px 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #9a8a6f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color .2s;
+}
+
+.edit-toggle:hover {
+  color: #2c2016;
+}
+
+.edit-toggle.active {
+  color: #e0447a;
+}
+
 .quotes {
   max-width: 760px;
   margin: 0 auto;
@@ -249,6 +280,57 @@ body {
   font-size: 26px;
   line-height: 1.35;
   color: #2c2016;
+}
+
+.quotes.editing blockquote p[contenteditable="true"] {
+  cursor: text;
+  border-radius: 4px;
+  outline: 1.5px dashed rgba(44, 32, 22, .3);
+  outline-offset: 6px;
+}
+
+.quote-delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(44, 32, 22, .55);
+  color: #f5eee1;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-quote {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  margin: 20px auto 0;
+  padding: 16px;
+  appearance: none;
+  border: 1.5px dashed #9a8a6f;
+  border-radius: 11px;
+  background: transparent;
+  color: #9a8a6f;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  transition: color .2s, border-color .2s;
+}
+
+.add-quote:hover {
+  color: #2c2016;
+  border-color: #2c2016;
 }
 
 .quote-mark {
