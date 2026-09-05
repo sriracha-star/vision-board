@@ -1,5 +1,5 @@
 // --- Tabs ---
-const TABS = ['home', 'target', 'rappels'];
+const TABS = ['board', 'home', 'target', 'rappels'];
 
 function setTab(tab) {
   document.querySelectorAll('.tab-btn').forEach((btn) => {
@@ -17,7 +17,7 @@ document.querySelectorAll('.tab-btn').forEach((btn) => {
   btn.addEventListener('click', () => setTab(btn.dataset.tab));
 });
 
-setTab('home');
+setTab('board');
 
 // --- Photo slots (IndexedDB-backed image upload with persistence) ---
 const DB_NAME = 'vision-board';

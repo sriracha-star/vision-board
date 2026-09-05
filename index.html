@@ -17,14 +17,20 @@
   <nav class="tabs">
     <div class="tabs-track">
       <div class="tabs-indicator" data-indicator></div>
+      <button class="tab-btn" data-tab="board">Board</button>
       <button class="tab-btn" data-tab="home">Home</button>
       <button class="tab-btn" data-tab="target">Target</button>
       <button class="tab-btn" data-tab="rappels">Rappels</button>
     </div>
   </nav>
 
+  <!-- BOARD -->
+  <section class="view" data-view="board">
+    <div class="photo-slot large-photo" data-slot="board-photo"></div>
+  </section>
+
   <!-- HOME -->
-  <section class="view" data-view="home">
+  <section class="view" data-view="home" hidden>
     <div class="masonry">
 
       <article class="card">
